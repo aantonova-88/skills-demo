@@ -122,7 +122,7 @@ const YourSkillsPage = () => {
                     onToggle={() => handleToggle(group.id)}
                     editMode={editMode}
                     draft={draft}
-                    onChangeDraft={(skillId, value) => handleDraftChange(skillId, value)}
+                    onChangeDraft={handleDraftChange}
                 />
             ))}
             {skillGroups.length === 0 && <EmptyState />}
